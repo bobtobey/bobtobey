@@ -5,12 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>BlueGorillaStudio</title>
+        <title>BobTobey.com</title>
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/bluegorillastudio.css">
-        <style>
-    </style>
+        <style></style>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-THPZ8SCKFW"></script>
         <script>
@@ -21,88 +20,98 @@
         gtag('js', new Date());
 
         gtag('config', trackingId);
-	</script>
+	    </script>
     </head>
 
     <body class="page-homepage">
+        <!-- Outer Container START -->
         <div class="outer-container">
             <!-- Main Container START -->
             <div class="maincontainer">
+                <!-- Grid Wrapper START -->
                 <div class="gridwrapper">
                     <!-- HEADER Container -->
                     <header>
-                        <div class="header-branding-wrapper">
-                            <span><img src="images/logos/bgs_logo-40.png" alt="BlueGorillaStudio"></span>
-                            <h1 class="logo">Bob Tobey</h1>
-                            <h2 class="application-name"></h2>
+                        <div class="header-wrapper">
+                            <div class="header-branding-wrapper">
+                                <span><img src="images/logos/bgs_logo-40.png" alt="BlueGorillaStudio"></span>
+                                <!-- <h1 class="logo">Bob Tobey</h1> -->
+                                <h2 class="application-name"></h2>
+                            </div>
+                            <!-- NAV BAR -->
+                            <nav>
+                                <ul class="nav-menu">
+                                    <li><a href="index.html" class="nav-link-active" title="Home">Home</a></li>
+                                    <li class="nav-dropdown">
+                                        <a href="portfolio.html" title="Portfolio">Portfolio</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="portfolio.html" title="Case Studies">Case Studies</a></li>
+                                            <li><a href="clients.html" title="Client History">Client History</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html" title="About">About</a></li>
+                                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                                </ul>
+                            </nav>
                         </div>
-                        <!-- NAV BAR -->
-                        <nav>
-                            <ul class="nav-menu">
-                                <li><a href="index.html" class="nav-link-active" title="Home">Home</a></li>
-                                <li class="nav-dropdown">
-                                    <a href="portfolio.html" title="Portfolio">Portfolio</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio.html" title="Case Studies">Case Studies</a></li>
-                                        <li><a href="clients.html" title="Client History">Client History</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about.html" title="About">About</a></li>
-                                <li><a href="contact.html" title="Contact">Contact</a></li>
-                            </ul>
-                        </nav>
                     </header>
-                    <!-- CONTENT Area -->
+                    <!-- CONTENT Area START -->
                     <div class="maincontentwrapper">
                         <!-- SECTION DETAILS -->
-                        <section>
-                            <article class="article-grid-100 article-nobgbdr article-flex">
-                                <h2 class="text-hero">Bob Tobey — UX Architect &amp; Front-End Engineer</h2>
-                                <div class="text-hero-bloc">
-                                    <!-- <h2 class="text-hero">Welcome to Blue Gorilla Studio!</h2> -->
-                                    <p class="text-hero">
-                                        I build digital experiences that focus on the entire user journey from concept to completion and integrating design thinking into every stage of the process.
-                                    </p>
-                                </div>
-                                <div class="img-hero-profilepic">
-                                    <img src="images/profile-pic-2.png" alt="Bob Tobey - UX Engineer and Frontend Developer">
+                        <section class="hero-section">
+                            <!-- HERO Article -->
+                            <article class="article-grid-100 article-nobgbdr hero-article article-flex">
+                                <h1 class="text-hero-header article-flex-content-100 fade-item">
+                                    Hi, I'm Bob Tobey, UX Specialist &amp; Front-End Engineer
+                                </h1>
+                                <p class="text-hero-body fade-item">
+                                    I craft research-driven digital experiences.
+                                </p>
+                                <div class="bgs-form-btn-bloc fade-item">
+                                    <a href="cs-ai-powered-fnol-management-application.html" class="btn-link mgn-0 btn-complementary-solid btn-link-right btn-target-off" title="View Case Study" data-dialog-toggle="false">
+                                        View Case Study
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-4 w-4" id="3lg2fv_0"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                    </a>
                                 </div>
                             </article>
-                            <article class="article-grid-100 article-readable feature-projects article-style-tertiary-hollow">
+                        </section>
+                        <section class="feature-section">
+                            <!-- FEATURE Article -->
+                            <article class="article-grid-100 article-readable feature-projects article-style-empty">
                                 <h2>Featured Case Studies</h2>
                                 <div class="article-group-wrapper">
                                     <div class="article-grid-wrapper">
                                         <!-- Feature Project 1 -->
-                                        <div class="article-grid-bloc feature-one">
+                                        <div class="article-grid-bloc pdg-0 feature-one">
                                             <div class="portfolio-image-wrapper">
                                                 <img src="images/portfolio/mm-feature-1.png" alt="Monark AI - FNOL Management">
                                             </div>
                                             <div class="article-text-wrapper">
                                                 <h3>AI-Powered Claims Interface</h3>
                                                 <p>
-                                                    This initial prototype shows how Monarch Insurance customers report claims with less hassle. The straightforward, visual guidance aims to make this essential first step less stressful and more understandable for everyone involved.
+                                                    Streamlining the claims reporting process with visual guidance to reduce user stress and improve task completion.
                                                 </p>
                                             </div>
                                             <div class="bgs-form-btn-bloc">
-                                                <a href="cs-ai-powered-fnol-management-application.html" class="btn-link btn-complementary btn-link-right btn-target-off" title="View Case Study" data-dialog-toggle="false">
+                                                <a href="cs-ai-powered-fnol-management-application.html" class="btn-link mgn-0 btn-complementary btn-link-right btn-target-off" title="View Case Study" data-dialog-toggle="false">
                                                     View Case Study
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-4 w-4" id="3lg2fv_0"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                                                 </a>
                                             </div>
                                         </div>
                                         <!-- Feature Project 2 -->
-                                        <div class="article-grid-bloc feature-two">
+                                        <div class="article-grid-bloc pdg-0 feature-two">
                                             <div class="portfolio-image-wrapper">
                                                 <img src="images/portfolio/fnol-feature-1.png" alt="Reimagining First Notice of Loss (FNOL)">
                                             </div>
                                             <div class="article-text-wrapper">
                                                 <h3>Reimagining Claims Reporting</h3>
                                                 <p>
-                                                    This early design concept shows how a claims reporting experience could be simplified. The visual step-by-step interface is just a starting point, but it aims to bring more clarity and confidence to what's typically a confusing process.
+                                                    Redesigning claims reporting to deliver greater clarity, confidence, and a seamless step-by-step user experience.
                                                 </p>
                                             </div>
                                             <div class="bgs-form-btn-bloc">
-                                                <a href="cs-fnol-reimagined.html" class="btn-link btn-complementary btn-link-right btn-target-off" title="View Case Study" data-dialog-toggle="false">
+                                                <a href="cs-fnol-reimagined.html" class="btn-link mgn-0 btn-complementary btn-link-right btn-target-off" title="View Case Study" data-dialog-toggle="false">
                                                     View Case Study
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-4 w-4" id="3lg2fv_0"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                                                 </a>
@@ -111,9 +120,11 @@
                                     </div>
                                 </div>
                             </article>
-
-                            <article class="article-grid-100 article-readable feature-articles article-style-empty">
-                                <h2>Articles</h2>
+                        </section>
+                        <!-- INSIGNTS Article -->
+                        <section class="insights-section">
+                            <article class="article-grid-100 article-nobgbdr article-readable feature-articles article-style-empty">
+                                <h2>Insights</h2>
                                 <div class="article-text-wrapper">
                                     <p>
                                         View my articles on LinkedIn, where I share insights on
@@ -128,10 +139,10 @@
                                                     <img src="images/article3-thb-pic.png" alt="The Invisible Power of Typography">
                                                 </a>
                                             </div>
-                                            <div class="article-text-bloc article-category-bloc">
+                                            <div class="article-category-bloc">
                                                 <span class="category-design">UX</span>
                                             </div>
-                                            <div class="article-text-bloc">
+                                            <div class="article-text-wrapper">
                                                 <a href="https://www.linkedin.com/pulse/invisible-power-typography-bob-tobey-yomre">
                                                     The Invisible Power of Typography
                                                 </a>
@@ -143,10 +154,10 @@
                                                     <img src="images/article1-thb-pic.png" alt="Empowering Teams for Success: A Managers Guide to Motivating Employees and Enhancing Performance">
                                                 </a>
                                             </div>
-                                            <div class="article-text-bloc article-category-bloc">
+                                            <div class="article-category-bloc">
                                                 <span class="category-mngt">Management</span>
                                             </div>
-                                            <div class="article-text-bloc">
+                                            <div class="article-text-wrapper">
                                                 <a href="https://www.linkedin.com/pulse/empowering-teams-success-managers-guide-motivating-employees-tobey-h9yne/" target="_blank" title="Empowering Teams for Success: A Managers Guide to Motivating Employees and Enhancing Performance">
                                                     Empowering Teams for Motivation & Performance
                                                 </a>
@@ -158,11 +169,11 @@
                                                     <img src="images/article2-thb-pic.png" alt="Managers Guide To Building High-Performance Virtual Teams">
                                                 </a>
                                             </div>
-                                            <div class="article-text-bloc article-category-bloc">
+                                            <div class="article-category-bloc">
                                                 <span class="category-mngt">Management</span>
                                                 <span class="category-mngt">Leadership</span>
                                             </div>
-                                            <div class="article-text-bloc">
+                                            <div class="article-text-wrapper">
                                                 <a href="https://www.linkedin.com/pulse/managers-guide-building-high-performance-virtual-teams-bob-tobey-qfb7c/" target="_blank" title="Managers Guide To Building High-Performance Virtual Teams">
                                                     A Guide To Building High-Performance Virtual Teams
                                                 </a>
@@ -172,10 +183,110 @@
                                 </div>
                             </article>
                         </section>
-
+                        <!-- SECTION ABOUT DETAILS -->
+                        <section class="snapshot-section">
+                            <article class="article-grid-100 snapshot-articles article-style-empty">
+                                <h2>About Snapshot</h2>
+                                <div class="article-group-wrapper">
+                                    <div class="article-grid-wrapper">
+                                        <div class="article-grid-bloc grid-bloc-1 article-style-primary-hollow">
+                                            <div class="snapshot-profilepic">
+                                                <img src="images/profile-pic-2.png" alt="Bob Tobey - UX Engineer and Frontend Developer">
+                                            </div>
+                                            <div class="article-list-wrapper">
+                                                <ul class="style-list-on style-list-nested">
+                                                    <li>Designs informed by genuine user insights</li>
+                                                    <li>Always curious, always exploring</li>
+                                                    <li>Turning thoughtful design into clean code</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="article-grid-bloc grid-bloc-2">
+                                            <div class="tools-icons">
+                                                <i class="devicon-html5-plain" title="HTML5" aria-hidden="true">
+                                                    <svg viewBox="0 0 128 128">
+                                                        <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path>
+                                                        <path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path>
+                                                        <path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path>
+                                                        <path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>
+                                                    </svg>
+                                                </i>
+                                                <i class="devicon-css3-plain" title="CSS3" aria-hidden="true">
+                                                    <svg viewBox="0 0 128 128">
+                                                        <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
+                                                    </svg>
+                                                </i>
+                                                <i class="devicon-javascript-plain" title="JavaScript" aria-hidden="true">
+                                                    <svg viewBox="0 0 128 128">
+                                                        <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path><path fill="#323330"
+                                                            d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
+                                                    </svg>
+                                                </i>
+                                                <i class="devicon-github-original title="GitHub" aria-hidden="true">
+                                                    <svg viewBox="0 0 128 128">
+                                                        <g fill="#181616"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 1.512c-23.493 0-42.545 19.047-42.545 42.545 0 18.797 12.19 34.745 29.095 40.37 2.126.394 2.907-.923 2.907-2.047 0-1.014-.04-4.366-.058-7.92-11.837 2.573-14.334-5.02-14.334-5.02-1.935-4.918-4.724-6.226-4.724-6.226-3.86-2.64.29-2.586.29-2.586 4.273.3 6.523 4.385 6.523 4.385 3.794 6.504 9.953 4.623 12.38 3.536.383-2.75 1.485-4.628 2.702-5.69-9.45-1.075-19.384-4.724-19.384-21.026 0-4.645 1.662-8.44 4.384-11.42-.442-1.072-1.898-5.4.412-11.26 0 0 3.572-1.142 11.7 4.363 3.395-.943 7.035-1.416 10.65-1.432 3.616.017 7.258.49 10.658 1.432 8.12-5.504 11.688-4.362 11.688-4.362 2.316 5.86.86 10.187.418 11.26 2.728 2.978 4.378 6.774 4.378 11.42 0 16.34-9.953 19.938-19.427 20.99 1.526 1.32 2.886 3.91 2.886 7.88 0 5.692-.048 10.273-.048 11.674 0 1.13.766 2.458 2.922 2.04 16.896-5.632 29.07-21.574 29.07-40.365C106.545 20.56 87.497 1.512 64 1.512z"></path><path
+                                                                d="M37.57 62.596c-.095.212-.428.275-.73.13-.31-.14-.482-.427-.382-.64.09-.216.424-.277.733-.132.31.14.486.43.38.642zM39.293 64.52c-.203.187-.6.1-.87-.198-.278-.297-.33-.694-.124-.884.208-.188.593-.1.87.197.28.3.335.693.123.884zm1.677 2.448c-.26.182-.687.012-.95-.367-.262-.377-.262-.83.005-1.013.264-.182.684-.018.95.357.262.385.262.84-.005 1.024zm2.298 2.368c-.233.257-.73.188-1.093-.163-.372-.343-.475-.83-.242-1.087.237-.257.736-.185 1.102.163.37.342.482.83.233 1.086zm3.172 1.374c-.104.334-.582.485-1.064.344-.482-.146-.796-.536-.7-.872.1-.336.582-.493 1.067-.342.48.144.795.53.696.87zm3.48.255c.013.35-.396.642-.902.648-.508.012-.92-.272-.926-.618 0-.354.4-.642.908-.65.506-.01.92.272.92.62zm3.24-.551c.06.342-.29.694-.793.787-.494.092-.95-.12-1.014-.46-.06-.35.297-.7.79-.792.503-.088.953.118 1.017.466zm0 0"></path></g><path
+                                                            d="M24.855 108.302h-10.7a.5.5 0 00-.5.5v5.232a.5.5 0 00.5.5h4.173v6.5s-.937.32-3.53.32c-3.056 0-7.327-1.116-7.327-10.508 0-9.393 4.448-10.63 8.624-10.63 3.614 0 5.17.636 6.162.943.31.094.6-.216.6-.492l1.193-5.055a.468.468 0 00-.192-.39c-.403-.288-2.857-1.66-9.058-1.66-7.144 0-14.472 3.038-14.472 17.65 0 14.61 8.39 16.787 15.46 16.787 5.854 0 9.405-2.502 9.405-2.502.146-.08.162-.285.162-.38v-16.316a.5.5 0 00-.5-.5zM79.506 94.81H73.48a.5.5 0 00-.498.503l.002 11.644h-9.392V95.313a.5.5 0 00-.497-.503H57.07a.5.5 0 00-.498.503v31.53c0 .277.224.503.498.503h6.025a.5.5 0 00.497-.504v-13.486h9.392l-.016 13.486c0 .278.224.504.5.504h6.038a.5.5 0 00.497-.504v-31.53a.497.497 0 00-.497-.502zm-47.166.717c-2.144 0-3.884 1.753-3.884 3.923 0 2.167 1.74 3.925 3.884 3.925 2.146 0 3.885-1.758 3.885-3.925 0-2.17-1.74-3.923-3.885-3.923zm2.956 9.608H29.29c-.276 0-.522.284-.522.56v20.852c0 .613.382.795.876.795h5.41c.595 0 .74-.292.74-.805v-20.899a.5.5 0 00-.498-.502zm67.606.047h-5.98a.5.5 0 00-.496.504v15.46s-1.52 1.11-3.675 1.11-2.727-.977-2.727-3.088v-13.482a.5.5 0 00-.497-.504h-6.068a.502.502 0 00-.498.504v14.502c0 6.27 3.495 7.804 8.302 7.804 3.944 0 7.124-2.18 7.124-2.18s.15 1.15.22 1.285c.07.136.247.273.44.273l3.86-.017a.502.502 0 00.5-.504l-.003-21.166a.504.504 0 00-.5-.502zm16.342-.708c-3.396 0-5.706 1.515-5.706 1.515V95.312a.5.5 0 00-.497-.503H107a.5.5 0 00-.5.503v31.53a.5.5 0 00.5.503h4.192c.19 0 .332-.097.437-.268.103-.17.254-1.454.254-1.454s2.47 2.34 7.148 2.34c5.49 0 8.64-2.784 8.64-12.502s-5.03-10.988-8.428-10.988zm-2.36 17.764c-2.073-.063-3.48-1.004-3.48-1.004v-9.985s1.388-.85 3.09-1.004c2.153-.193 4.228.458 4.228 5.594 0 5.417-.935 6.486-3.837 6.398zm-63.689-.118c-.263 0-.937.107-1.63.107-2.22 0-2.973-1.032-2.973-2.368v-8.866h4.52a.5.5 0 00.5-.504v-4.856a.5.5 0 00-.5-.502h-4.52l-.007-5.97c0-.227-.116-.34-.378-.34h-6.16c-.238 0-.367.106-.367.335v6.17s-3.087.745-3.295.805a.5.5 0 00-.36.48v3.877a.5.5 0 00.497.503h3.158v9.328c0 6.93 4.86 7.61 8.14 7.61 1.497 0 3.29-.48 3.586-.59.18-.067.283-.252.283-.453l.004-4.265a.51.51 0 00-.5-.502z"
+                                                            fill="#100E0F"></path>
+                                                    </svg>
+                                                </i>
+                                                <i class="devicon-figma-plain" title="Figma" aria-hidden="true">
+                                                    <svg viewBox="0 0 128 128">
+                                                        <path fill="#0acf83" d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"></path><path fill="#a259ff" d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"></path><path fill="#f24e1e" d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"></path><path fill="#ff7262" d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0"></path><path fill="#1abcfe" d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"></path>
+                                                    </svg>
+                                                </i>
+                                                <i class="devicon-python-plain" title="Python" aria-hidden="true">
+                                                    <svg viewBox="0 0 128 128">
+                                                        <lineargradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"></stop><stop offset="1" stop-color="#306998"></stop></lineargradient><lineargradient id="python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"></stop><stop offset="1" stop-color="#FFE873"></stop></lineargradient><path fill="url(#python-original-a)"
+                                                            d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z" transform="translate(0 10.26)"></path><path fill="url(#python-original-b)"
+                                                            d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z" transform="translate(0 10.26)"></path><radialgradient id="python-original-c" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"></stop><stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop></radialgradient><path opacity=".444" fill="url(#python-original-c)"
+                                                            d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"></path>
+                                                    </svg>
+                                                </i>
+                                                <i class="devicon-mysql-original" title="MySQL" aria-hidden="true">
+                                                    <svg viewBox="0 0 128 128">
+                                                        <path fill="#00618A" d="M0 91.313h4.242V74.566l6.566 14.598c.773 1.77 1.832 2.391 3.914 2.391s3.098-.621 3.871-2.391l6.566-14.598v16.746h4.242V74.594c0-1.633-.652-2.422-2-2.828-3.223-1.004-5.383-.137-6.363 2.039l-6.441 14.41-6.238-14.41c-.937-2.176-3.14-3.043-6.359-2.039-1.348.406-2 1.195-2 2.828zM32.93 77.68h4.238v9.227c-.039.5.16 1.676 2.484 1.715h9.223V77.633h4.25c.02 0-.008 14.984-.008 15.047.023 3.695-4.582 4.496-6.707 4.559H33.02v-2.852l13.414-.004c2.73-.285 2.406-1.645 2.406-2.098v-1.113h-9.012c-4.195-.039-6.863-1.871-6.898-3.977-.004-.191.09-9.422 0-9.516zm0 0"></path><path fill="#E48E00"
+                                                            d="M56.391 91.313h12.195c1.426 0 2.813-.301 3.914-.816 1.836-.84 2.73-1.984 2.73-3.48v-3.098c0-1.223-1.016-2.367-3.016-3.125-1.059-.41-2.367-.625-3.629-.625h-5.141c-1.711 0-2.527-.516-2.73-1.656-.039-.137-.039-.246-.039-.383V76.2c0-.109 0-.219.039-.355.203-.867.652-1.113 2.16-1.25l.41-.027h12.109v-2.824H63.488c-1.711 0-2.609.109-3.426.352-2.527.789-3.629 2.039-3.629 4.215v2.473c0 1.902 2.16 3.535 5.789 3.914l1.223.055h4.406c.164 0 .324 0 .449.027 1.344.109 1.914.355 2.324.844.211.195.332.473.324.758v2.477c0 .297-.203.68-.609 1.004-.367.328-.98.543-1.793.598l-.449.027H56.391zm45.297-4.922c0 2.91 2.164 4.539 6.523 4.867l1.227.055h11.051v-2.828h-11.133c-2.488 0-3.426-.625-3.426-2.121V71.738h-4.238V86.39zm-23.75.148V76.457c0-2.559 1.801-4.113 5.355-4.602a7.976 7.976 0 0 1 1.145-.082h8.047c.41 0 .777.027 1.188.082 3.555.488 5.352 2.043 5.352 4.602v10.082c0 2.078-.762 3.188-2.523 3.914l4.18 3.77h-4.926l-3.379-3.051-3.402.215H84.44a9.23 9.23 0 0 1-2.492-.352c-2.699-.734-4.008-2.152-4.008-4.496zm4.578-.246c0 .137.039.273.082.438.246 1.172 1.348 1.824 3.023 1.824h3.852l-3.539-3.195h4.926l3.086 2.789c.57-.305.941-.766 1.074-1.363.039-.137.039-.273.039-.41v-9.668c0-.109 0-.246-.039-.383-.246-1.09-1.348-1.715-2.984-1.715h-6.414c-1.879 0-3.105.816-3.105 2.098zm0 0"></path><path
+                                                            fill="#00618A"
+                                                            d="M124.219 67.047c-2.605-.07-4.598.172-6.301.891-.484.203-1.258.207-1.336.813.266.281.309.699.52 1.039.406.66 1.094 1.539 1.707 2l2.074 1.484c1.273.777 2.699 1.223 3.93 2 .723.461 1.441 1.039 2.148 1.559.348.254.582.656 1.039.816v-.074c-.238-.305-.301-.723-.52-1.039l-.965-.965c-.941-1.25-2.137-2.348-3.41-3.262-1.016-.727-3.281-1.711-3.707-2.891l-.074-.074c.719-.078 1.563-.34 2.223-.516 1.117-.301 2.113-.223 3.262-.52l1.559-.449v-.293c-.582-.598-.996-1.387-1.633-1.93-1.656-1.41-3.469-2.824-5.336-4.004-1.035-.652-2.312-1.074-3.41-1.629-.367-.187-1.016-.281-1.262-.594-.574-.734-.887-1.664-1.332-2.52l-2.668-5.633c-.562-1.285-.93-2.555-1.633-3.707-3.363-5.535-6.988-8.875-12.602-12.156-1.191-.699-2.633-.973-4.148-1.332l-2.449-.148c-.496-.211-1.012-.82-1.48-1.113-1.859-1.176-6.629-3.73-8.008-.371-.867 2.121 1.301 4.191 2.078 5.266.543.754 1.242 1.598 1.629 2.445.258.555.301 1.113.52 1.703.539 1.453 1.008 3.031 1.707 4.375.352.68.738 1.395 1.184 2 .273.371.742.539.816 1.113-.457.641-.484 1.633-.742 2.445-1.16 3.652-.723 8.191.965 10.898.516.828 1.734 2.609 3.41 1.926 1.465-.598 1.137-2.445 1.555-4.078.098-.367.039-.641.223-.887v.074l1.336 2.668c.988 1.59 2.738 3.25 4.223 4.371.773.582 1.379 1.59 2.375 1.93V68.6h-.074c-.195-.297-.496-.422-.742-.664-.582-.57-1.227-1.277-1.703-1.93-1.352-1.832-2.547-3.84-3.633-5.93-.52-.996-.973-2.098-1.41-3.113-.168-.391-.164-.984-.516-1.184-.48.742-1.187 1.344-1.559 2.223-.594 1.402-.668 3.117-.891 4.891l-.148.074c-1.031-.25-1.395-1.312-1.777-2.223-.973-2.305-1.152-6.02-.297-8.672.219-.687 1.219-2.852.813-3.484-.191-.633-.828-1-1.184-1.484a11.7 11.7 0 0 1-1.187-2.074c-.793-1.801-1.164-3.816-2-5.633-.398-.871-1.074-1.75-1.629-2.523-.617-.855-1.305-1.484-1.781-2.52-.168-.367-.398-.957-.148-1.336.078-.254.195-.359.445-.441.43-.332 1.629.109 2.074.293 1.191.496 2.184.965 3.191 1.633.48.32.969.941 1.555 1.113h.668c1.043.238 2.211.07 3.188.367 1.723.523 3.27 1.34 4.668 2.227 4.273 2.695 7.766 6.535 10.156 11.117.387.738.551 1.441.891 2.223.684 1.578 1.543 3.203 2.223 4.746s1.34 3.094 2.297 4.375c.504.672 2.453 1.031 3.336 1.406.621.262 1.637.535 2.223.891 1.125.676 2.211 1.48 3.266 2.223.523.375 2.141 1.188 2.223 1.855zM91.082 38.805a5.26 5.26 0 0 0-1.332.148v.074h.074c.258.535.715.879 1.035 1.336l.742 1.555.074-.07c.461-.324.668-.844.668-1.633-.187-.195-.211-.437-.371-.668-.211-.309-.621-.48-.891-.742zm0 0"></path>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div class="article-grid-bloc grid-bloc-3 article-style-primary-hollow">
+                                            <div class="testimonials">
+                                                <h3>Testimonials</h3>
+                                                <div class="article-text-wrapper">
+                                                    <blockquote>
+                                                        “Beyond his technical expertise, Bob's collaborative and approachable
+                                                        nature made him a pleasure to work with.”
+                                                    </blockquote>
+                                                    <cite>— Rohit Rakhe, Founder Mango Mousse AI</cite>
+                                                </div>
+                                                <div class="article-text-wrapper">
+                                                    <blockquote>
+                                                        “Bob is one of the most skilled and friendly developers I've worked
+                                                        with so far in my UX career. He has a great understanding of what makes a great
+                                                        experience for users and how to implement that from a technical perspective.”
+                                                    </blockquote>
+                                                    <cite>— Lorna Tanner, UX Designer</cite>
+                                                </div>
+                                                <div class="article-text-wrapper">
+                                                    <blockquote>
+                                                        “Bob’s attention to detail and commitment to quality are unmatched.
+                                                        From UX to code, he always ensures the experience is polished and functional.”
+                                                    </blockquote>
+                                                    <cite>— Gerik Zayatz, Principal Engineer</cite>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
                         <!-- SECTION QUOTE DETAILS -->
-                        <section>
-                            <article class="article-grid-100 article-nobgbdr quote-wrapper">
+                        <section class="quote-section">
+                            <article class="article-grid-100 article-nobgbdr quote-wrapper article-style-empty">
 
                                 <h2>Fuel for Your Mind</h2>
                                 <div class="quote-text">
@@ -191,6 +302,7 @@
                         </section>
 
                     </div>
+                    <!-- CONTENT Area START -->
 
                     <!-- FOOTER -->
                     <footer>
@@ -202,9 +314,12 @@
                         </div>
                     </footer>
                 </div>
+                <!-- Grid Wrapper END -->
             </div>
             <!-- Main Container END -->
         </div>
+        <!-- Outer Container END -->
+
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>

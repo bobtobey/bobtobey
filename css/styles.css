@@ -1,23 +1,8 @@
 :root {   
     --primary-text-color: #000;
     --secondary-text-color: blue;
-    --alert-color: red;
-    --update-color: green;
-    --information-color: blue;
-    --default-gutter: 5px;
-    --prime-color-red: #a30606;
-    --prime-color-orange: #dd7d24;
-    --prime-color-yellow: #e0be25;
-    --prime-color-green: #1dc018;
-    --prime-color-blue: #2fb8c2;
-    --prime-color-indigo: #5c61aa;
-    --prime-color-violet: #eb18cf;
-    --prime-color-pink: #a30606;
-    --prime-color-grey: #707070;
-    --prime-color-white: #dfdfdf;
-
 } 
-/* meyerweb reset START */
+/* ------- meyerweb reset START ------- */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b, u, i, center, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video , dl, dt, dd  {
@@ -38,7 +23,8 @@ ol, ul, li {
     border: 0;
 }    
 /* meyerweb reset END */   
-/* BASE Styles */
+    
+/* ------- BASE Styles ------- */
 html {
     /* The rem unit is relative to the root element's font size (html element) */
     font-size: var(--default-font-size, 10px);
@@ -48,13 +34,17 @@ body {
     font-size: var(--default-text-size, 16px);
     font-family: var(--base-font-family-sans-serif);
     line-height: 1; /* meyerweb reset */
-    background: var(--clr-primary-50);
-    background: var(--neutralbg-50);
+    line-height: var(--base-text-line-height); /* responsive vertical rhythm and readability */
+    background: var(--clr-secondary-50);
+    background: var(--base-color-white, #ffffff);
     height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0; 
     overflow: auto;
+  text-rendering: optimizeLegibility;  /* better kerning/ligatures */
+  font-kerning: normal;                /* enable GPOS kerning      */
+  font-feature-settings: "liga";       /* common ligatures on      */
 }
 .outer-container {
     min-height: 100vh;
@@ -69,7 +59,7 @@ body {
     margin: 0 auto;
     /* display: flex;
     flex-direction: column; */
-    background: var(--primary-color-white, #ffffff);
+    background: var(--base-color-white, #ffffff);
     overflow: auto;
 }
 .gridwrapper {
@@ -78,27 +68,27 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3.5rem; /* 35px */
     margin: 0 auto;
 }
 h2 {
-    font-size: 2.5rem;
+    font-size: 3.0rem; /* 30px */
     margin: 0 auto;
 }
 h3 {
-    font-size: 2.0rem;
+    font-size: 2.5rem; /* 25px */
     margin: 0 auto;
 } 
 h4 {
-    font-size: 1.8rem;
+    font-size: 2.0rem; /* 20px */
     margin: 0 auto;
 }   
 h5 {
-    font-size: 1.6rem;
+    font-size: 1.8rem; /* 18px */
     margin: 0 auto;
 }        
 p {
-    color: var(--primary-text-color, black);
+    color: var(--base-text-color, #000000);
     font-size: var(--default-text-size);
     margin: 0.5rem 0 1rem 0;
 }  
@@ -125,12 +115,20 @@ a {
     display: none;
 }
 .is-border-grey {    
-    border: 1px solid var(--neutral-400);
+    border: 1px solid var(--mui-neutral-400);
 }
 .notes-disclaimer {
     font-size: 1.4rem;
-    color: var(--neutral-600);
+    color: var(--mui-neutral-600);
     font-style: italic;
+}
+
+/* Base Spacing Override Styles */
+.mgn-0 {
+    margin: 0 !important;
+}
+.pdg-0 {
+    padding: 0 !important;
 }
 
 /* Grid Styles START */
@@ -148,11 +146,9 @@ a {
 }
 .gridwrapper header {
     grid-area: header;
-    /* background: var(--prime-color-grey); */
 }
 .gridwrapper nav {
     grid-area: nav;
-    /* background: var(--prime-color-grey); */
 }
 .gridwrapper .maincontentwrapper {
     width: 100%;
@@ -161,11 +157,10 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    /* background: var(--prime-color-blue); */
+    background: var(--base-color-white);
 }
 .gridwrapper footer {
     grid-area: footer;
-    /* background: var(--prime-color-grey); */
 }  
 
 .grid-col-span-100 {
@@ -181,7 +176,7 @@ form {
         font-family: var(--base-font-family-sans-serif);
 
         &::placeholder {
-            color: var(--neutral-500);
+            color: var(--mui-neutral-500);
         }
     }
     & label.required {
@@ -223,11 +218,11 @@ form {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: var(--neutral-500);
+        color: var(--mui-neutral-500);
         transition: transform 0.3s ease;
 
         &:hover {
-            color: var(--clr-primary-500);
+            color: var(--clr-secondary-500);
             transform: translateX(-10px);
         }
         &:hover svg {
@@ -253,21 +248,22 @@ button {
     justify-content: center;
     align-content: center;
     align-items: center;
-    color: var(--neutral-700);
+    color: var(--mui-neutral-700);
     font-size: var(--default-text-size);
     z-index: 1001;
-    border: 1px solid var(--neutral-700);
+    border: 1px solid var(--mui-neutral-700);
     border-radius: 2rem;
     padding: 1rem;
     cursor: pointer;
 
     &:hover {
-        background: var(--neutral-50);
-        color: var(--neutral-500);
+        background: var(--mui-neutral-50);
+        color: var(--mui-neutral-500);
     }
 }
 .btn-link {
-    color: var(--primary-color-white);
+    color: var(--base-color-white);
+    font-weight: 600;
     border: 1px solid;
     border-radius: 10px;
     text-decoration: none;
@@ -321,27 +317,27 @@ button {
 }
 .btn-complementary-hollow {
     border-color: var(--button-border-complementary);
-    background: var(--primary-color-white);
+    background: var(--base-color-white);
     color: var(--button-text-complementary);
 
     &:hover {       
         background: var(--button-background-complementary-hover);
-        color: var(--primary-color-white);
+        color: var(--base-color-white);
         text-decoration: none;
     }
     &:active {
         background: var(--button-background-complementary-active);
-        color: var(---primary-color-white);
+        color: var(---base-color-white);
         transform: scale(0.98);
     }
 }
 .btn-complementary-solid {
     border-color: var(--button-border-complementary);
     background: var(--button-background-complementary-solid);
-    color: var(--primary-color-white);
+    color: var(--base-color-white);
 
     &:hover {       
-        background: var(--primary-color-white);
+        background: var(--base-color-white);
         color: var(--button-text-complementary-hover-solid);
         text-decoration: none;
     }
@@ -380,12 +376,15 @@ nav li:last-child {
 }
 
 nav a {
-    display: block; /* Ensures the padding and clickable area is respected */
     display: flex; /* Aligns items in the center */
     align-items: center; /* Centers items vertically */
     text-decoration: none; 
+    font-weight: 600;
     width: 100%; 
-    color: #333; 
+    color: var(--clr-secondary-600); 
+    color: var(--clr-secondary-500);
+    color: var(--clr-secondary-400); 
+    color: var(--clr-secondary-400x); 
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: var(--base-border-radius-size);
@@ -414,8 +413,8 @@ nav a.nav-link-dropdown-active {
 }
 
 nav a:hover {
-    background-color: #ccc; 
     text-decoration: none;
+    color: var(--clr-secondary-900);
 }
 
 /* Base Semantic Tag Styles */
@@ -484,7 +483,7 @@ footer {
     label {
         display: block;
         margin: 0 0 1rem 0;
-        color: var(--primary-color-black);
+        color: var(--base-color-black);
     }
     input[type=date],
     input[type=email], 
@@ -493,17 +492,17 @@ footer {
     select, textarea {
         display: inline-block;
         border-radius: 4px;
-        border: 2px solid var(--neutral-500);
+        border: 2px solid var(--mui-neutral-500);
         padding: 12px 20px;
         padding: 1.2rem 1.6rem;
         margin: 0 0 2rem 0;
-        color: var(--neutral-500);
+        color: var(--mui-neutral-500);
 
         &:focus {
-            background-color: var(--neutral-200);
+            background-color: var(--mui-neutral-200);
         }
         &:hover{
-            border-color: var(--neutral-500);
+            border-color: var(--mui-neutral-500);
             /* color: cyan; */
         }
     }

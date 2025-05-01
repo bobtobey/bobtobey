@@ -140,6 +140,10 @@ document.addEventListener('DOMContentLoaded', function() {
             scrollPage(backtotopButton);
         }
     });
+    window.addEventListener('load', function() {
+        document.body.classList.add('loaded');
+    });
+      
     // Document listeners
     document.body.addEventListener('click', function(event) {
         const evntTarget= event.target;
