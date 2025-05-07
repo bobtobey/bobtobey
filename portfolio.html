@@ -5,8 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="robots" content="noindex">
-        <title>BlueGorillaStudio: Portfolio</title>
+        <title>Portfolio | Bob Tobey — UX Design &amp; Case Studies</title>
+        <meta name="description" content="Explore Bob Tobey's UX portfolio featuring case studies, UI design, and real-world product experience. Visual-first, data-backed design work.">
+        <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+        <link rel="shortcut icon" href="/favicon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="/bobtobey/favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/bluegorillastudio.css">
@@ -24,45 +29,58 @@
     </head>
 
     <body class="page-portfolio">
+        <!-- Outer Container START -->
         <div class="outer-container">
             <!-- Main Container START -->
             <div class="maincontainer">
+                <!-- Grid Wrapper START -->
                 <div class="gridwrapper">
                     <!-- HEADER Container -->
                     <header>
-                        <div class="header-branding-wrapper">
-                            <a href="index.html" title="Home - BlueGorillaStudio">
-                                <span><img src="images/logos/bgs_logo-40.png" alt="BlueGorillaStudio"></span>
-                                <h1 class="logo">BlueGorillaStudio: </h1></a>
-                            <h2 class="application-name">Portfolio</h2>
+                        <div class="header-wrapper">
+                            <div class="header-branding-wrapper">
+                                <a href="index.html" title="Home - Bob Tobey UX Portfolio">
+                                    <span><img src="images/logos/bgs_logo-40.png" alt="BobTobey.com"></span>
+                                </a>
+                            </div>
+                            <!-- NAV BAR -->
+                            <nav>
+                                <ul class="nav-menu">
+                                    <li><a href="index.html" title="Home">Home</a></li>
+                                    <li class="nav-dropdown">
+                                        <a href="portfolio.html" class="nav-link-active" title="Case Studies">Case Studies
+                                            <svg class="icon-caret" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="caret-icon ml-1 h-4 w-4">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="clients.html" title="Client History">Client History</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html" title="About">About</a></li>
+                                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                                </ul>
+                            </nav>
                         </div>
-                        <!-- NAV BAR -->
-                        <nav>
-                            <ul class="nav-menu">
-                                <li><a href="index.html" title="Home">Home</a></li>
-                                <li class="nav-dropdown">
-                                    <a href="portfolio.html" class="nav-link-active" title="Portfolio">Portfolio</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio.html" class="nav-link-dropdown-active" title="Case Studies">Case Studies</a></li>
-                                        <li><a href="clients.html" title="Client History">Client History</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about.html" title="About">About</a></li>
-                                <li><a href="contact.html" title="Contact">Contact</a></li>
-                            </ul>
-                        </nav>
                     </header>
                     <!-- CONTENT Area -->
                     <div class="maincontentwrapper">
                         <!-- SECTION DETAILS -->
-                        <section>
-                            <article class="article-grid-100 article-nobgbdr">
-                                <h2 class="text-hero">UX Case Studies:</h2>
-                                <p class="text-hero">
-                                    ..focusing on the entire user journey-from concept to completion . . .
+                        <section class="hero-section">
+                            <!-- HERO Article -->
+                            <article class="article-grid-100 article-nobgbdr hero-article">
+                                <h1 class="text-hero-header article-flex-content-100 fade-item">
+                                    UX Case Studies
+                                </h1>
+                                <p class="text-hero-body fade-item">
+                                    Case studies that blend research, design, and engineering to create real user impact.
                                 </p>
                             </article>
-                            <!-- Porfolio Case Study List -->
+                        </section>
+                        <!-- Porfolio Case Study List -->
+                        <section class="content-section">
                             <!-- CS MM AI  -->
                             <article class="article-grid-100 article-portfolio-list">
                                 <div class="article-group-wrapper">
@@ -73,16 +91,16 @@
                                             </div>
                                         </div>
                                         <div class="article-grid-bloc portfolio-list-content-bloc">
-                                            <div class="article-text-wrapper article-industry-wrapper">
+                                            <div class="article-text-wrapper portfolio-item-category">
                                                 <p>Insurance Technology</p>
                                             </div>
                                             <div class="article-text-wrapper">
-                                                <h3>AI-Powered FNOL Management Application</h3>
+                                                <h2>AI-Powered FNOL Management Application</h2>
                                                 <p>
                                                     Designed and developed the responsive, user-centered interface for an AI-powered claims management tool, improving clarity, reducing friction, and building trust in a critical stage of the insurance journey - First Notice of Loss.
                                                 </p>
                                             </div>
-                                            <div class="article-text-wrapper">
+                                            <div class="article-text-wrapper portfolio-item-role">
                                                 <p><strong>Role:</strong> UX Research, UX Design, Prototyping, Front-end Development</p>
                                             </div>
                                             <div class="bgs-form-btn-bloc">
@@ -105,11 +123,11 @@
                                             </div>
                                         </div>
                                         <div class="article-grid-bloc portfolio-list-content-bloc">
-                                            <div class="article-text-wrapper article-industry-wrapper">
+                                            <div class="article-text-wrapper portfolio-item-category">
                                                 <p>Insurance UX</p>
                                             </div>
                                             <div class="article-text-wrapper">
-                                                <h3>Reimagining First Notice of Loss (FNOL)</h3>
+                                                <h2>Reimagining First Notice of Loss (FNOL)</h2>
                                                 <p>
                                                     Redesigning the FNOL experience through a focused UX design and concept sprint to reimagine a modern FNOL experience from the ground up. Crafting a visually-guided interface that transforms a complex, frustrating process into a clear and reassuring user journey, to improve claim submissions.
                                                 </p>
@@ -137,11 +155,11 @@
                                             </div>
                                         </div>
                                         <div class="article-grid-bloc portfolio-list-content-bloc">
-                                            <div class="article-text-wrapper article-industry-wrapper">
+                                            <div class="article-text-wrapper portfolio-item-category">
                                                 <p>Collaboration Tools</p>
                                             </div>
                                             <div class="article-text-wrapper">
-                                                <h3>File Notes Enhancements</h3>
+                                                <h2>File Notes Enhancements</h2>
                                                 <p>
                                                     Enhancing the File Notes experience meant reducing friction and restoring focus for claims professionals.
                                                     This redesign eliminated workflow disruptions, and enabled in-context note-taking, modernizing one of the system's
@@ -171,11 +189,11 @@
                                             </div>
                                         </div>
                                         <div class="article-grid-bloc portfolio-list-content-bloc">
-                                            <div class="article-text-wrapper article-industry-wrapper">
+                                            <div class="article-text-wrapper portfolio-item-category">
                                                 <p>Design Systems</p>
                                             </div>
                                             <div class="article-text-wrapper">
-                                                <h3>Fuze Design System: Creating Cohesion at Scale</h3>
+                                                <h2>Fuze Design System: Creating Cohesion at Scale</h2>
                                                 <p>
                                                     Building a flexible, scalable design system empowered UX and engineering teams to streamline development, eliminate redundancy, and deliver a cohesive look and feel across multiple insurance products—enhancing consistency, brand trust, and user experience.
                                                 </p>
@@ -192,6 +210,12 @@
                                         </div>
                                     </div>
                                 </div>
+                            </article>
+                        </section>
+                        <!-- SECTION EMPTY ZONE -->
+                        <section class="empty-last-section">
+                            <article class="article-grid-100 article-nobgbdr empty-last-wrapper article-style-empty">
+                                <!-- Empty Article -->
                             </article>
                         </section>
 

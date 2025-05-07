@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="robots" content="noindex" />
-    <title>BlueGorillaStudio: Clients</title>
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/bluegorillastudio.css" />
-    <style></style>
+    <title>Client Projects - Bob Tobey | UX & Front-End Case Highlights</title>
+    <meta name="description" content="Explore client-focused UX projects by Bob Tobey, featuring practical, front-end implementations and collaborative design solutions across industries.">
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/bobtobey/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bluegorillastudio.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-THPZ8SCKFW"></script>
     <script>
@@ -24,58 +29,61 @@
   </head>
 
   <body class="page-portfolio">
+    <!-- Outer Container START -->
     <div class="outer-container">
       <!-- Main Container START -->
       <div class="maincontainer">
+        <!-- Grid Wrapper START -->
         <div class="gridwrapper">
           <!-- HEADER Container -->
           <header>
-            <div class="header-branding-wrapper">
-              <a href="index.html" title="Home - BlueGorillaStudio">
-                <span><img
-                    src="images/logos/bgs_logo-40.png"
-                    alt="BlueGorillaStudio" /></span>
-                <h1 class="logo">BlueGorillaStudio:</h1></a>
-              <h2 class="application-name">Client History</h2>
+            <div class="header-wrapper">
+              <div class="header-branding-wrapper">
+                <a href="index.html" title="Home - Bob Tobey UX Portfolio">
+                  <span><img src="images/logos/bgs_logo-40.png" alt="BobTobey.com"></span>
+                </a>
+              </div>
+              <!-- NAV BAR -->
+              <nav>
+                <ul class="nav-menu">
+                  <li><a href="index.html" title="Home">Home</a></li>
+                  <li class="nav-dropdown">
+                    <a href="portfolio.html" class="nav-link-dropdown-active-parent" title="Case Studies">
+                      Case Studies
+                      <svg class="icon-caret" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="caret-icon ml-1 h-4 w-4">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="clients.html" class="nav-link-dropdown-active" title="Client History">Client History</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="about.html" title="About">About</a></li>
+                  <li><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+              </nav>
             </div>
-            <!-- NAV BAR -->
-            <nav>
-              <ul class="nav-menu">
-                <li><a href="index.html" title="Home">Home</a></li>
-                <li class="nav-dropdown">
-                  <a href="portfolio.html" class="nav-link-active" title="Portfolio">
-                    Portfolio
-                    <svg class="icon-caret" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="caret-icon ml-1 h-4 w-4">
-                      <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="portfolio.html" title="Case Studies">Case Studies</a></li>
-                    <li><a href="clients.html" class="nav-link-dropdown-active" title="Client History">Client History</a></li>
-                  </ul>
-                </li>
-                <li><a href="about.html" title="About">About</a></li>
-                <li><a href="contact.html" title="Contact">Contact</a></li>
-              </ul>
-            </nav>
           </header>
           <!-- CONTENT Area -->
           <div class="maincontentwrapper">
             <!-- SECTION DETAILS -->
-            <section>
-              <article class="article-grid-100 article-nobgbdr">
-                <h2 class="text-hero">
+            <section class="hero-section">
+              <!-- HERO Article -->
+              <article class="article-grid-100 article-nobgbdr hero-article article-flex">
+                <h1 class="text-hero-header article-flex-content-100 fade-item">
                   Brands &amp; Clients I have worked with:
-                </h2>
-                <p class="text-hero">
+                </h1>
+                <p class="text-hero-body fade-item">
                   ..balancing creativity with analytical thinking to deliver
                   impactful user-centered solutions . . .
                 </p>
               </article>
-              <!-- Portfolio CLIENT Work -->
-              <article class="article-grid-100 article-readable article-portfolio-work article-style-empty">
+            </section>
+            <!-- Portfolio CLIENT Work -->
+            <section class="content-section">
+              <article class="article-grid-100 article-readable content-article article-portfolio-work article-style-empty">
                 <div class="portfolio-summary-work">
                   <h2>Agency collaborations - where it all started</h2>
                   <p>
@@ -98,7 +106,7 @@
                 <div class="portfolio-summary-work">
                   <h3>Agency Projects</h3>
                 </div>
-                <div class="portfolio-work-item article-style-primary-hollow">
+                <div class="portfolio-work-item article-style-primary-hollow effect-hover-border-shadow-scale">
                   <h3>L.e.i. jeans</h3>
                   <div class="portfolio-image-wrapper">
                     <img
@@ -108,7 +116,7 @@
                   <div class="portfolio-txt-wrapper">
                   </div>
                 </div>
-                <div class="portfolio-work-item article-style-primary-hollow">
+                <div class="portfolio-work-item article-style-primary-hollow effect-hover-border-shadow-scale">
                   <h3>GLO Jeans</h3>
                   <div class="portfolio-image-wrapper">
                     <img
@@ -118,7 +126,7 @@
                   <div class="portfolio-txt-wrapper">
                   </div>
                 </div>
-                <div class="portfolio-work-item article-style-primary-hollow">
+                <div class="portfolio-work-item article-style-primary-hollow effect-hover-border-shadow-scale">
                   <h3>ELLE girl ezine</h3>
                   <div class="portfolio-image-wrapper">
                     <img
@@ -128,7 +136,7 @@
                   <div class="portfolio-txt-wrapper">
                   </div>
                 </div>
-                <div class="portfolio-work-item article-style-primary-hollow">
+                <div class="portfolio-work-item article-style-primary-hollow effect-hover-border-shadow-scale">
                   <h3>Judith Jack</h3>
                   <div class="portfolio-image-wrapper">
                     <img
@@ -138,7 +146,7 @@
                   <div class="portfolio-txt-wrapper">
                   </div>
                 </div>
-                <div class="portfolio-work-item article-style-primary-hollow">
+                <div class="portfolio-work-item article-style-primary-hollow effect-hover-border-shadow-scale">
                   <h3>JNY in the Classroom</h3>
                   <div class="portfolio-image-wrapper">
                     <img
@@ -148,7 +156,7 @@
                   <div class="portfolio-txt-wrapper">
                   </div>
                 </div>
-                <div class="portfolio-work-item article-style-primary-hollow">
+                <div class="portfolio-work-item article-style-primary-hollow effect-hover-border-shadow-scale">
                   <h3>Microsite for Burt's Bees</h3>
                   <div class="portfolio-image-wrapper">
                     <img
@@ -159,8 +167,10 @@
                   </div>
                 </div>
               </article>
+            </section>
 
-              <article class="article-grid-100 article-readable article-portfolio-work article-style-empty">
+            <section class="content-section-wide-bottom">
+              <article class="article-grid-100 article-readable content-article article-portfolio-work article-style-empty">
                 <!-- Disclaimer Notes -->
                 <div class="portfolio-notes-work">
                   <h4>Disclaimer</h4>
@@ -173,8 +183,8 @@
               </article>
             </section>
 
-            <!-- ASIDE DETAILS -->
           </div>
+          <!-- CONTENT Area END -->
 
           <!-- FOOTER -->
           <footer>
@@ -203,9 +213,12 @@
             </div>
           </footer>
         </div>
+        <!-- Grid Wrapper END -->
       </div>
       <!-- Main Container END -->
     </div>
+    <!-- Outer Container END -->
+
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script

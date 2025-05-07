@@ -67,6 +67,7 @@
     --base-margin-spacing: 2rem; 
     --base-padding-spacing: 2rem;
     --base-gap-spacing: 2rem;
+    --base-margin-spacing-text-xsm: 0.35em;
     --base-margin-spacing-text-sm: 0.5em;
     --base-margin-spacing-text-md: 1em;
     --base-margin-spacing-text-lg: 2em;
@@ -177,6 +178,7 @@
     --clr-secondary-700: #005f70;
     --clr-secondary-800: #00505e;
     --clr-secondary-900: #00414c;
+
 	--clr-secondary-dark-100: #02c3e5; /* HSB 189 99 90 */
 	--clr-secondary-dark-300: #02aecc; /* HSB 189 99 80 */
 	--clr-secondary-dark-400: #0298b3; /* HSB 189 99 70 */
@@ -204,11 +206,12 @@
     --text-padding-bottom: 2rem;
     /* Button Variables Primary */
     --button-border-primary: var(--clr-secondary);
+    --button-border-primary-hover: var(--clr-primary);
     --button-background-primary: var(--clr-secondary-500);
     --button-background-primary-hover: var(--base-color-white);
     --button-background-primary-active: var(--clr-secondary-700);
     --button-text-primary: var(--base-color-white);
-    --button-text-primary-hover: var(--clr-secondary-500);
+    --button-text-primary-hover: var(--clr-primary-500);
     --button-text-primary-active: var(--clr-secondary-100);
     /* Button Variables secondary */
     --button-border-secondary: var(--clr-secondary);
@@ -219,17 +222,21 @@
     --button-text-secondary-hover: var(--base-color-white);
     --button-text-secondary-active: var(--clr-secondary-100);
     /* Button Variables complementary */
-    --button-border-complementary: var(--clr-secondary-dark-300);
+    --button-border-complementary: var(--clr-primary-500);
+    --button-border-complementary-hover: var(--clr-secondary-500);
+    --button-border-complementary-solid: var(--clr-secondary-500);
+    --button-border-complementary-hover-solid: var(--clr-primary-500);
     --button-background-complementary: var(--base-color-white);
     --button-background-complementary-solid: var(--clr-secondary);
     --button-background-complementary-hover: var(--clr-secondary);
     --button-background-complementary-active: var(--clr-secondary-700);
     --button-background-complementary-active-solid: var(--clr-secondary-50);
-    --button-text-complementary: var(--clr-secondary-dark-100);
+    --button-text-complementary: var(--clr-primary-500);
     --button-text-complementary-hover: var(--base-color-white);
-    --button-text-complementary-hover-solid: var(--clr-secondary-dark-100);
+
+    --button-text-complementary-hover-solid: var(--clr-primary-500);
     --button-text-complementary-active: var(--base-color-white);
-    --button-text-complementary-active-solid: var(--clr-secondary-dark-100);
+    --button-text-complementary-active-solid: var(--clr-primary-500);
 
     /* Dialog Variables */
     --dialog-header-background-color: var(--mui-neutral-200);
