@@ -36,37 +36,7 @@
                 <!-- Grid Wrapper START -->
                 <div class="gridwrapper">
                     <!-- HEADER Container -->
-                    <header>
-                        <div class="header-wrapper">
-                            <div class="header-branding-wrapper">
-                                <a href="index.html" title="Home - Bob Tobey UX Portfolio">
-                                    <span><img src="images/logos/bgs_logo-40.png" alt="BobTobey.com"></span>
-                                </a>
-                                <!-- <h1 class="logo">Bob Tobey</h1> -->
-                                <!-- <h2 class="application-name"></h2> -->
-                            </div>
-                            <!-- NAV BAR -->
-                            <nav>
-                                <ul class="nav-menu">
-                                    <li><a href="index.html" class="nav-link-active" title="Home">Home</a></li>
-                                    <li class="nav-dropdown">
-                                        <a href="portfolio.html" title="Case Studies">Case Studies
-                                            <svg class="icon-caret" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                class="caret-icon ml-1 h-4 w-4">
-                                                <polyline points="6 9 12 15 18 9"></polyline>
-                                            </svg>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="clients.html" title="Client History">Client History</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html" title="About">About</a></li>
-                                    <li><a href="contact.html" title="Contact">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </header>
+                    <site-header active="home"></site-header>
                     <!-- CONTENT Area START -->
                     <div class="maincontentwrapper">
                         <!-- SECTION DETAILS -->
@@ -80,8 +50,8 @@
                                     I craft research-driven digital experiences.
                                 </p>
                                 <div class="bgs-form-btn-bloc fade-item">
-                                    <a href="cs-ai-powered-fnol-management-application.html" class="btn-link mgn-0 btn-complementary-solid btn-link-right btn-target-off" title="View Case Study" data-dialog-toggle="false">
-                                        View Case Study
+                                    <a href="portfolio.html" class="btn-link mgn-0 btn-complementary-solid btn-link-right btn-target-off" title="View Case Study" data-dialog-toggle="false">
+                                        View Case Studies
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-4 w-4" id="3lg2fv_0"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                                     </a>
                                 </div>
@@ -336,6 +306,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
         <script src="scripts/main.js"></script>
+        <script type="module" src="scripts/site-header.js"></script>
 
         <script>
         // Zen Quotes API URL

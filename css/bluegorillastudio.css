@@ -1622,3 +1622,10 @@ footer {
     padding: 1rem 0.5rem;
   }
 }
+
+/* Hide the wrapper from layout altogether */
+/* display: contents lets the children (your original header/nav) participate in the grid/flex layout just like before, and you don’t need to touch any existing selectors. */
+site-header,
+site-nav {
+  display: contents;        /* wrapper generates no box; children act as if promoted */
+}
